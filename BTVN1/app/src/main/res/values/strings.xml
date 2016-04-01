@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">BTVN1</string>
+
+    <string name="location">Hà Nội</string>
+    <string name="temperature">19°C</string>
+    <string name="weather">Trời nắng</string>
+    <string name="day1">30/3</string>
+    <string name="day1_temperature">22°C</string>
+    <string name="day2">31/3</string>
+    <string name="day2_temperature">13°C</string>
+
+    <string name="name1">Họ và tên: Hoàng Dương</string>
+    <string name="school1">Trường: ĐHQGHN</string>
+    <string name="dateOfBirth1">Năm sinh: 1997</string>
+    <string name="gender1">Giới tính: Nam</string>
+    <string name="name2">Họ và tên: Hoàng Dương</string>
+    <string name="school2">Trường: ĐHQGHN</string>
+    <string name="dateOfBirth2">Năm sinh: 1997</string>
+    <string name="gender2">Giới tính: Nam</string>
+    <string name="name3">Họ và tên: Hoàng Dương</string>
+    <string name="school3">Trường: ĐHQGHN</string>
+    <string name="dateOfBirth3">Năm sinh: 1997</string>
+    <string name="gender3">Giới tính: Nam</string>
+</resources>
+
