@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Add Student</string>
+
+    <string name="nameText">Name</string>
+    <string name="classText">Class</string>
+    <string name="birthdayText">Birthday</string>
+    <string name="firstDateText">01-01-1900</string>
+    <string name="birthplaceText">Birthplace</string>
+    <string name="hobbyText">Hobby</string>
+    <string name="booksHobby">Books</string>
+    <string name="sportsHobby">Sports</string>
+    <string name="gamesHobby">Games</string>
+    <string name="musicHobby">Music</string>
+    <string name="genderText">Gender</string>
+    <string name="maleGender">Male</string>
+    <string name="femaleGender">Female</string>
+    <string name="NAGender">N/A</string>
+    <string name="saveButton">Save</string>
+</resources>
