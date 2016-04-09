@@ -1,8 +1,8 @@
 package com.example.asusa42f.hwbasicwidget;
 
-import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
@@ -21,8 +21,12 @@ import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener, View.OnClickListener {
+    public static final String KEY_STUDENT = "Student";
+
     DatePickerDialog datePickerDialog;
     Dialog saveDialog;
+    EditText nameEditText;
+    EditText classEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,8 +88,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         button.setOnClickListener(this);
 
         saveDialog = new Dialog(this);
-        saveDialog.setTitle("Abcd");
-        saveDialog.setContentView(R.layout.save_dialog);
+        saveDialog.setContentView(R.layout.activity_save_dialog);
     }
 
     @Override
@@ -95,9 +98,23 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 datePickerDialog.show();
                 break;
             case R.id.saveButton:
-                saveDialog.show();
+                moveToSaveDialog();
                 break;
         }
+    }
+
+    public void moveToSaveDialog() {
+        Student student = new Student();
+        nameEditText = (EditText) findViewById(R.id.nameEditText);
+        classEditText = (EditText) findViewById(R.id.classEditText);
+        student.setName(nameEditText.getText().toString());
+        student.setClasses(classEditText.getText().toString());
+        Bundle bundle = new Bundle();
+        bundle.putSerializable("Student", student);
+        Intent intent = new Intent(this, com.example.asusa42f.hwbasicwidget.saveDialog.class);
+        // Intent intent = new Intent(MainActivity.this, com.example.asusa42f.hwbasicwidget.saveDialog.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 
     @Override

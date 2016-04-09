@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Add Employee</string>
+    <string name="addText">Add</string>
+    <string name="nameText">Name</string>
+    <string name="ageText">Age</string>
+    <string name="birthdayText">Birthday</string>
+    <string name="firstEmployeeText">#1</string>
+    <string name="secondEmployeeText">#2</string>
+    <string name="thirdEmployeeText">#3</string>
+    <string name="fourthEmployeeText">#4</string>
+    <string name="fifthEmployeeText">#5</string>
+    <string name="sixthEmployeeText">#6</string>
+    <string name="seventhEmployeeText">#7</string>
+    <string name="eighthEmployeeText">#8</string>
+    <string name="ninthEmployeeText">#9</string>
+    <string name="tenthEmployeeText">#10</string>
+</resources>
